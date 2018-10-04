@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="mt-5">Select a language?</h1><br>
+<ul class="list-group">
+    <li class="list-group-item"><a href="/hindi/{{ full_name }}" id="hindi">Hindi</a></li>
+    <li class="list-group-item"><a href="/english/{{ full_name }}" id="english">English</a></li>
+    <li class="list-group-item"><a href="/tamil/{{ full_name }}" id="tamil">Tamil</a></li>
+</ul>
+{% endblock %}
+

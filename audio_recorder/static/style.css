@@ -1,0 +1,30 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+#transcript {
+    margin: 100px 1px 77px 1px;
+    font-size: 40px;
+}
+
+#start {
+    font-size: 20px;
+    padding: 20px;
+}
+#finish {
+ margin: 0px 0px 50px 1000px;
+}

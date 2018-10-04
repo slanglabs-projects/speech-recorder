@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+    <form method="POST" action="/success">
+            <input type="hidden" name="full_name" value="{{ full_name }}">
+            <div class="col-md-5 col-md-offset-10" id="finish">
+                <button type="submit" class="btn btn-success btn-lg">Finish</button>
+            </div>
+    </form>
+        <p id="full_name" hidden>{{ full_name }}</p>
+        <p id="transcript_id" hidden>{{ transcript_id }}</p>
+        <div class="col-12 col-sm-6 col-md-10">
+            <button onclick="toggle_text('prev')" class="btn btn-info btn-md same">Prev Text</button>
+        </div>
+        <div class="col-12 col-sm-5 col-md-1">
+            <button onclick="toggle_text('next')" class="btn btn-info btn-md same">Next Text</button>
+        </div>
+    </div>
+            <div class="col-md-5 col-md-offset-4">
+        <h1 id="transcript">{{ transcript }}</h1>
+                </div><br><br><br>
+
+        <div class="col-md-4 col-md-offset-5">
+        <button id="start" class="btn btn-primary btn-lg">Click to speak</button>
+        </div>
+</div>
+{% endblock %}

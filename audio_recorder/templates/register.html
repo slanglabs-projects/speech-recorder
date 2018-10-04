@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if error  %}
+    *{{ error }}
+{% endif %}
+<h1 class="mt-5">Register to record your voice for slang</h1><br>
+<form method="POST" action="/">
+    <div class="form-group">
+        <label for="name">Your Full name</label>
+        <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter your name" name="name" id="name">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your details with anyone else.</small>
+    </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+
+{% endblock %}
