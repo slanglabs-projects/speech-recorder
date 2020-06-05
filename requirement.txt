@@ -1,6 +1,6 @@
 boto3==1.9.16
 botocore==1.12.16
-Django==1.8
+Django==1.11.29
 docutils==0.14
 jmespath==0.9.3
 python-dateutil==2.7.3
